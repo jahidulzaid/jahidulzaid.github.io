@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jahidul Islam | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    .profile-photo {
+      width: 110px;
+      height: 110px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      box-shadow: 0 2px 12px rgba(13,110,253,0.12);
+      margin-bottom: 12px;
+      background: #e3e8ef;
+      display: inline-block;
+    }
+    .resume-btn {
+      display: inline-block;
+      margin: 12px 0 0 0;
+      padding: 8px 22px;
+      background: #0d6efd;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.07rem;
+      font-weight: 500;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(13,110,253,0.08);
+      transition: background 0.2s;
+      text-decoration: none;
+    }
+    .resume-btn:hover {
+      background: #2563eb;
+      color: #e0eaff;
+    }
+    .tech-icons {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .tech-icons img {
+      width: 32px;
+      height: 32px;
+      margin-right: 8px;
+      vertical-align: middle;
+      filter: drop-shadow(0 1px 2px rgba(13,110,253,0.10));
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6fa;
+      color: #222;
+    }
+    header {
+      background: linear-gradient(90deg, #0d6efd 70%, #2563eb 100%);
+      color: #fff;
+      padding: 40px 20px 28px 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(13,110,253,0.08);
+    }
+    header h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+      color: #fff;
+      text-shadow: 0 2px 8px rgba(13,110,253,0.18);
+    }
+    header p {
+      font-size: 1.15rem;
+      color: #f3f6ff;
+      margin: 8px 0;
+      text-shadow: 0 1px 4px rgba(13,110,253,0.10);
+    }
+    header a {
+      color: #fff;
+      font-weight: 500;
+      text-decoration: underline;
+      transition: color 0.2s;
+    }
+    header a:hover {
+      color: #e0eaff;
+    }
+    .container {
+      padding: 40px 24px;
+      max-width: 900px;
+      margin: 32px auto;
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6fa;
+      color: #222;
+    }
+    header {
+      background: linear-gradient(90deg, #0d6efd 70%, #2563eb 100%);
+      color: white;
+      padding: 32px 20px 20px 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(13,110,253,0.08);
+    }
+    .container {
+      padding: 40px 24px;
+      max-width: 900px;
+      margin: 32px auto;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    }
+    section {
+      margin-bottom: 36px;
+    }
+    h2 {
+      color: #0d6efd;
+      margin-bottom: 14px;
+      font-size: 1.35rem;
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid #e3e8ef;
+      padding-bottom: 4px;
+    }
+    ul {
+      padding-left: 22px;
+      margin-top: 8px;
+      margin-bottom: 0;
+    }
+    a {
+      color: #0d6efd;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    a:hover {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+    .project {
+      background: #f8fafc;
+      border: 1px solid #e3e8ef;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 8px rgba(13,110,253,0.04);
+      transition: box-shadow 0.2s;
+    }
+    .project:hover {
+      box-shadow: 0 4px 16px rgba(13,110,253,0.10);
+      background: #eef4ff;
+    }
+    .project a {
+      font-weight: 600;
+      font-size: 1.07rem;
+    }
+    footer {
+      text-align: center;
+      padding: 24px;
+      background: linear-gradient(90deg, #0d6efd 70%, #2563eb 100%);
+      color: white;
+      font-size: 1rem;
+      margin-top: 40px;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      box-shadow: 0 -2px 8px rgba(13,110,253,0.08);
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 16px 6px;
+        border-radius: 0;
+        box-shadow: none;
+      }
+      header, footer {
+        border-radius: 0;
+      }
+    }
+      font-size: 1.07rem;
+    }
+    footer {
+      text-align: center;
+      padding: 24px;
+      background: linear-gradient(90deg, #0d6efd 70%, #2563eb 100%);
+      color: white;
+      font-size: 1rem;
+      margin-top: 40px;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      box-shadow: 0 -2px 8px rgba(13,110,253,0.08);
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 16px 6px;
+        border-radius: 0;
+        box-shadow: none;
+      }
+      header, footer {
+        border-radius: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://avatars.githubusercontent.com/u/105617055?v=4" alt="Profile Photo" class="profile-photo">
+    <h1>Jahidul Islam</h1>
+    <p>Final-year CSE Student | Django & Laravel Developer | AI & RAG Enthusiast</p>
+    <div class="tech-icons">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" title="Django">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" alt="Laravel" title="Laravel">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" title="C++">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" title="Java">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" title="MySQL">
+    </div>
+    <p>
+      📧 <a href="mailto:jahidul.cse.gub@gmail.com">jahidul.cse.gub@gmail.com</a> |
+      📞 +8801886433466 |
+      <a href="https://github.com/jahidulzaid">GitHub</a> |
+      <a href="https://linkedin.com/in/jahidulzaid">LinkedIn</a>
+    </p>
+    <a class="resume-btn" href="Resume%20CV%20Of%20Jahidul%20Islam%20July%2025.pdf" download>Download Resume</a>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>Professional Summary</h2>
+      <p>Final-year Computer Science student at Green University of Bangladesh with hands-on experience in full-stack web development (Laravel, Django), AI, and RAG research. Proficient in C++, Java, Python, and system design.</p>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>Languages: C++, PHP (Laravel), Python (Django), Java, JavaScript, HTML, CSS, MySQL</li>
+        <li>Concepts: OOP, DSA, DB Design, OS, Networking</li>
+        <li>Tools: Git, GitHub, VS Code, NetBeans, XAMPP</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="project">
+        <a href="https://github.com/jahidulzaid/CodeCraft-Academy">CodeCraft-Academy</a> - Laravel learning platform with role-based access, quizzes, and multi-language support.
+      </div>
+      <div class="project">
+        <a href="https://github.com/jahidulzaid/Mini-Shop">MiniShop</a> - Basic PHP e-commerce site with cart and admin features.
+      </div>
+      <div class="project">
+        <a href="https://github.com/jahidulzaid/Advance_E-Commerce_Online-SuperShop">Advance E-Commerce</a> - Laravel-based responsive super shop with full features.
+      </div>
+      <div class="project">
+        <a href="https://github.com/jahidulzaid/CLI-Search-Engine">CLI-Based Search Engine</a> - C++ Trie-based engine supporting prefix and substring search.
+      </div>
+      <div class="project">
+        <a href="https://github.com/jahidulzaid/IDS-with-CLI-for-any-Datasets">Intrusion Detection System</a> - Python CLI project using rule-based anomaly detection.
+      </div>
+      <div class="project">
+        <a href="https://github.com/jahidulzaid/Multi-Client_ChatApp">Java ChatApp</a> - Real-time socket-based chat app with multi-client support.
+      </div>
+      <div class="project">
+        <a href="https://github.com/jahidulzaid">JMP Wash ChatBot</a> - Bilingual chatbot using Langchain, Gemini API, and Streamlit for sanitation queries.
+      </div>
+    </section>
+
+    <section>
+      <h2>Certificates & Achievements</h2>
+      <ul>
+        <li>Python with Django - EDGE (ICT Division)</li>
+        <li>PHP with Laravel - BASIS-BITM</li>
+        <li>2nd Place - IT Olympiad, GUB CSE Carnival 2024</li>
+        <li>IEEE Member (2024–2025)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Soft Skills</h2>
+      <ul>
+        <li>Team Collaboration & Leadership</li>
+        <li>Time & Task Management</li>
+        <li>Problem Solving & Accountability</li>
+        <li>Adaptability & Clear Communication</li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Jahidul Islam — All rights reserved
+  </footer>
+</body>
+</html>
