@@ -137,8 +137,62 @@ header::before {
 .hero-content {
     position: relative;
     z-index: 1;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
+}
+
+/* Two Column Layout for Hero */
+.hero-two-column {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 50px;
+    align-items: center;
+    text-align: left;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-right .profile-photo {
+    width: 280px;
+    height: 280px;
+    margin-bottom: 0;
+}
+
+.hero-two-column h1 {
+    text-align: left;
+    font-size: 2.8rem;
+}
+
+.hero-two-column .hero-subtitle {
+    text-align: left;
+}
+
+.hero-two-column .hero-description {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.hero-two-column .tech-icons {
+    justify-content: flex-start;
+}
+
+.hero-two-column .contact-info {
+    justify-content: flex-start;
+}
+
+.hero-two-column .btn-group {
+    justify-content: flex-start;
 }
 
 .profile-photo {
@@ -739,6 +793,38 @@ footer {
 
     .nav-toggle {
     display: flex;
+    }
+
+    /* Two-column layout becomes single column on mobile */
+    .hero-two-column {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .hero-left {
+        order: 2;
+    }
+
+    .hero-right {
+        order: 1;
+    }
+
+    .hero-right .profile-photo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-two-column h1,
+    .hero-two-column .hero-subtitle,
+    .hero-two-column .hero-description {
+        text-align: center;
+    }
+
+    .hero-two-column .tech-icons,
+    .hero-two-column .contact-info,
+    .hero-two-column .btn-group {
+        justify-content: center;
     }
 
     header h1 {
