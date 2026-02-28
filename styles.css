@@ -658,6 +658,72 @@ section.visible {
     margin-top: 10px;
 }
 
+.publications-list {
+    display: grid;
+    gap: 20px;
+}
+
+.publication-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: var(--shadow-sm);
+    border-left: 4px solid #28a745;
+}
+
+.publication-status {
+    display: inline-block;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.publication-status-accepted {
+    background: #28a745;
+}
+
+.publication-status-under-review {
+    background: #f59e0b;
+}
+
+.publication-status-in-preparation {
+    background: #6b7280;
+}
+
+.publication-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.publication-title a {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.publication-title a:hover {
+    color: var(--secondary-color);
+}
+
+.publication-meta {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.publication-authors {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.publication-summary {
+    line-height: 1.8;
+    color: #555;
+}
+
 /* Certifications */
 .cert-grid {
     display: grid;

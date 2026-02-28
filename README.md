@@ -14,6 +14,23 @@
   </a>
 </p>
 
+## 🔧 Portfolio Update Guide
+
+To add new publications or update existing ones on the website:
+
+1. Open `script.js`
+2. Find the `publicationItems` array
+3. Add a new object with these fields:
+  - `statusLabel` (example: `✓ ACCEPTED`, `UNDER REVIEW`)
+  - `statusClass` (`accepted`, `under-review`, `in-preparation`)
+  - `title`
+  - `link`
+  - `venue`
+  - `authors`
+  - `summary`
+
+After updating, refresh your site and update the footer "Last updated" text in `index.html`.
+
 
 ## 📖 About Me
 
