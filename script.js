@@ -126,6 +126,26 @@ document.querySelectorAll('section').forEach(section => {
   observer.observe(section);
 });
 
+// Scrollspy: highlight active nav link based on current section
+const navLinks = document.querySelectorAll('.nav-menu a[href^="#"]');
+
+const scrollspyObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      navLinks.forEach(link => link.classList.remove('active'));
+      const activeLink = document.querySelector(`.nav-menu a[href="#${entry.target.id}"]`);
+      if (activeLink) activeLink.classList.add('active');
+    }
+  });
+}, {
+  rootMargin: '-80px 0px -60% 0px',
+  threshold: 0
+});
+
+document.querySelectorAll('section[id]').forEach(section => {
+  scrollspyObserver.observe(section);
+});
+
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
